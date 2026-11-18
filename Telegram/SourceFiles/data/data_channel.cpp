@@ -776,7 +776,7 @@ bool ChannelData::canAddAdmins() const {
 }
 
 bool ChannelData::allowsForwarding() const {
-	return !(flags() & Flag::NoForwards);
+	return true; // patched: ignore Flag::NoForwards
 }
 
 bool ChannelData::canViewMembers() const {
